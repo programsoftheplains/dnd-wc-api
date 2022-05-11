@@ -14,19 +14,30 @@
 	<body>
 
 		<h1>How heavy are we today?</h1>
+
+		<h2>Enter your Strength Score</h2>
+
+		<section>
+			<input type="text" id="strInput" placeholder="STR Score">
+			<button id="strInputButton">Calculate Weight</button>
+		</section>
 		
 		<h2>Add items below</h2>
 
 		<section>
-			<input type="text" id="searchInput" placeholder="item name">
+			<input type="text" id="searchInput" placeholder="Item Name">
 			<button id="searchButton">Add Item</button>
 		</section>
 
 		<ul id="equipmentList">
 		</ul>
 
-		<button id="resetButton">Reset List</button>
-		<p>Total Weight: <span id="totalWeightOutput"></span></p>
+		<button id="resetListButton">Reset List</button>
+
+		<p>Str Score: <span id="strScoreLog"></span></p>
+		<p>Total Weight: <span id="totalWO"></span> / <span id="maxWD"></span></p>
+
+		<button id="resetAllButton">Reset All</button>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
